@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(240, 10%, 5%);
+    color: hsl(0, 0%, 85%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: hsl(240, 15%, 10%);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 32px 16px hsla(240, 70%, 30%, 0.75);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+address {
+    font-style: normal;
+    font-size: 0.95rem;
+    color: hsl(210, 10%, 70%);
+}
+
+a {
+    color: hsl(210, 100%, 65%);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: hsl(210, 100%, 75%);
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: hsl(210, 40%, 30%);
+    margin: 30px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: hsl(220, 100%, 65%);
+    border-bottom: 1px solid hsl(220, 40%, 30%);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #c9d1d9;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+#education article {
+    border-radius: 8px;
+    padding: 0 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#education article:hover {
+    transform: scale(1.05);
+    background-color: hsl(0, 0%, 15%);
+}
+
+.skills-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.skill-block {
+    flex: 1;
+    background-color: hsl(240, 10%, 15%);
+    padding: 0 0 20px 0; 
+    border-radius: 8px;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-block:hover {
+    transform: translateY(-5px);
+}
+
+.skill-block h3 {
+    margin-top: 0;
+    padding: 6px 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+    color: #0d1117;
+}
+
+.skill-block ul {
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+.hard-skills {
+    box-shadow: 0px 0px 16px 8px hsla(110, 65%, 40%, 0.5); 
+}
+.hard-skills h3 {
+    background-color: hsl(110, 65%, 45%); 
+}
+.hard-skills:hover {
+    box-shadow: 0px 0px 24px 12px hsla(110, 65%, 50%, 0.5); 
+}
+
+.soft-skills {
+    box-shadow: 0px 0px 16px 8px hsla(270, 65%, 45%, 0.5); 
+}
+.soft-skills h3 {
+    background-color: hsl(270, 65%, 50%);
+}
+.soft-skills:hover {
+    box-shadow: 0px 0px 24px 12px hsla(270, 65%, 55%, 0.5); 
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
