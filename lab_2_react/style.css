@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --color-base1:        hsl(240, 15%, 10%);
+    --color-base2:        hsl(0, 0%, 15%);
+    --color-base3:        hsl(110, 65%, 45%);
+    --color-base4:        hsl(270, 65%, 50%);
+    --color-accent1:      hsl(210, 40%, 30%);
+    --color-accent2:      hsl(220, 40%, 30%);
+    --color-accent3:      hsla(110, 65%, 40%, 0.5);
+    --color-accent4:      hsla(270, 65%, 45%, 0.5);
+    --color-txt1:         hsl(210, 10%, 70%);
+    --color-addrFg:       hsl(210, 100%, 65%);
+    --color-addrFg_hover: hsl(210, 100%, 75%);
+    --color-h2:           hsl(220, 100%, 65%);
+    --color-h3:           hsl(220, 25%, 5%);
+}
+
+* {
+    box-sizing: border-box;
+}
